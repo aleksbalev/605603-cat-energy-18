@@ -1,7 +1,9 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 - Студент: [Aleks Balev](https://up.htmlacademy.ru/adaptive/18/user/605603).
-- Наставник: [Алексей Корякин] (https://htmlacademy.ru/profile/alexeycorr).
+
+- Наставник: `Алексей Корякин` (https://htmlacademy.ru/profile/alexeycorr).
+
 
 ---
 
