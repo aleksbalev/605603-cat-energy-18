@@ -37,34 +37,164 @@
     </div>
   </header>
 
+  <main class="page-main">
+
+    <h1 class="page-main__title">
+      Подбор программы
+    </h1>
+
+    <section class="order">
+      <div class="container">
+        <div class="order__wrapper">
+          <h2 class="visually-hidden">
+            Форма
+          </h2>
+          <p class="order__text">
+            Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </p>
+          <form action="https://echo.htmlacademy.ru" class="order__form" method="POST">
+
+            <div class="order__fields">
+              <ul class="order__list">
+                <li class="order__item">
+                  <label for="cat-name">Имя:*</label>
+                  <input class="order__input" type="text" name="name" id="cat-name" placeholder="Барсик">
+                </li>
+                <li class="order__item">
+                  <label for="cat-weight">Вес (кг):*</label>
+                  <input class="order__input" type="text" name="weight" id="cat-weight" placeholder="7">
+                </li>
+                <li class="order__item">
+                  <label for="cat-age">Возраст (лет):</label>
+                  <input class="order__input" type="text" name="age" id="cat-age" placeholder="7">
+                </li>
+              </ul>
+            </div>
+
+            <div class="order__fields">
+              <ul class="order__list">
+                <li class="order__item">
+                  <label for="losing-weight">Похудение</label>
+                  <input type="radio" class="order__radio" name="program-choose" id="losing-weight" checked>
+                </li>
+                <li class="order__item">
+                  <label for="raise-weight">Набор массы</label>
+                  <input type="radio" class="order__radio" name="program-choose" id="raise-weight">
+                </li>
+                <li class="order__item">
+                  <label for="dont-know">Не знаю (Нужен ваш совет)</label>
+                  <input type="radio" class="order__radio" name="program-choose" id="dont-know">
+                </li>
+              </ul>
+            </div>
+
+            <div class="order__fields">
+              <h3 class="order__title">
+                Контактные данные
+                (владельца кота)
+              </h3>
+              <ul class="order__list">
+                <li class="order__item">
+                  <label for="owner-email">E-mail:*</label>
+                  <input type="email" class="order__input-contact" name="email" id="owner-email"
+                    placeholder="kuklachev@gmail.com">
+                </li>
+                <li class="order__item">
+                  <label for="owner-tel">Телефон:*</label>
+                  <input type="tel" class="order__input-contact" name="tel" id="owner-tel"
+                    placeholder="8 (960) 900-60-90">
+                </li>
+              </ul>
+            </div>
+
+            <div class="order__fields">
+              <h3 class="order__title">
+                Комментарий
+              </h3>
+              <textarea class="order__textarea" name="comment" id="owner-comment"
+                placeholder="Расскажите обо всех повадках кота">
+              </textarea>
+            </div>
+
+            <div class="order__fields">
+              <h3 class="order__title">
+                Дополнительно
+              </h3>
+              <ul class="order__list">
+                <li class="order__item">
+                  <label for="sweetener">Сахарозаменитель</label>
+                  <input type="checkbox" class="order__checkbox" name="sweetener" id="sweetener" checked>
+                </li>
+                <li class="order__item">
+                  <label for="water">Питьевая вода</label>
+                  <input type="checkbox" class="order__checkbox" name="clean-water" id="water">
+                </li>
+                <li class="order__item">
+                  <label for="milk">Молоко</label>
+                  <input type="checkbox" class="order__checkbox" name="milk" id="milk">
+                </li>
+                <li class="order__item">
+                  <label for="vitamins">Витамины</label>
+                  <input type="checkbox" class="order__checkbox" name="vitamins" id="vitamins">
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="button">Отправить заявку</button>
+            <p class="order__note">* — Обязательные поля</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">
+            Контактная информация
+          </h2>
+          <div class="contacts__location">
+            <b class="contacts__slogan">
+              Приглашаем к сотрудничеству дилеров!
+            </b>
+            <p class="contacts__adress">
+              ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург
+            </p>
+          </div>
+          <img src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+            width="320" height="400">
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
           <img src="https://via.placeholder.com/150x150" alt="логотип Cat Energy">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="https://vk.com/htmlacademy" class="social__link">
-                <img src="https://via.placeholder.com/150x150" alt="картинка вконтакте" class="social__image" width="22"
-                  height="12">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.instagram.com/htmlacademy" class="social__link">
-                <img src="https://via.placeholder.com/150x150" alt="картинка инстаграм" class="social__image" width="17"
-                  height="17">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.facebook.com/htmlacademy" class="social__link">
-                <img src="https://via.placeholder.com/150x150" alt="картинка фейсбук" class="social__image" width="10"
-                  height="19">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a href="https://vk.com/htmlacademy" class="social__link">
+              <img src="https://via.placeholder.com/150x150" alt="картинка вконтакте" class="social__image" width="22"
+                height="12">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.instagram.com/htmlacademy" class="social__link">
+              <img src="https://via.placeholder.com/150x150" alt="картинка инстаграм" class="social__image" width="17"
+                height="17">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.facebook.com/htmlacademy" class="social__link">
+              <img src="https://via.placeholder.com/150x150" alt="картинка фейсбук" class="social__image" width="10"
+                height="19">
+            </a>
+          </li>
+        </ul>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright">
           HTML Academy
 
