@@ -1,0 +1,13 @@
+@mixin upper {
+  text-transform: uppercase;
+}
+
+@mixin oswaldRegular {
+  font-family: "Oswald", "ArialMT", sans-serif;
+  font-weight: 400;
+}
+
+@mixin oswaldMedium {
+  font-family: "Oswald", "ArialMT", sans-serif;
+  font-weight: 500;
+}

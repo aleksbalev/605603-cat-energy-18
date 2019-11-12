@@ -1,0 +1,46 @@
+.page-header__logo {
+  margin-top: 11px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+
+  svg {
+    width: 191px;
+    height: 39px;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    @include upper;
+    @include oswaldRegular;
+    padding: 24px 123px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-bottom: 1px solid lightgrey;
+
+    &:first-child {
+      border-top: 1px solid lightgrey;
+    }
+
+    &--active {
+      border-bottom: 1px solid #68b738;
+    }
+
+    a {
+      color: #111111;
+
+      &:active {
+        color: rgba(#111111, 0.3);
+      }
+    }
+  }
+}
