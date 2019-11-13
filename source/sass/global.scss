@@ -16,6 +16,7 @@ body {
 
   color: #444444;
 
+  background-color: #ffffff;
   font-family: $second-font;
   font-weight: $regular;
 }
@@ -27,12 +28,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main-title {

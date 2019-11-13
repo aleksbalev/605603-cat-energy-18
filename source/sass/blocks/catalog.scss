@@ -1,0 +1,43 @@
+.catalog__list {
+  @include listDischarge;
+}
+
+.catalog__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__title {
+  @include upper;
+  width: 75px;
+  font-family: $main-font;
+  font-weight: $regular;
+  color: #111111;
+
+  &--more {
+    width: 220px;
+  }
+}
+
+.catalog__field {
+  font-family: $second-font;
+  font-weight: $regular;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__value {
+  font-family: $second-font;
+  font-weight: $regular;
+  padding-left: 66px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: right;
+}
+
+.catalog_button {
+  margin-top: 23px;
+}
