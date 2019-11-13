@@ -1,12 +1,10 @@
 .page-header__logo {
+  display: block;
   margin-top: 11px;
   margin-bottom: 15px;
   margin-left: 20px;
 
-  svg {
-    width: 191px;
-    height: 39px;
-
+  img {
     &:active {
       opacity: 0.6;
     }
