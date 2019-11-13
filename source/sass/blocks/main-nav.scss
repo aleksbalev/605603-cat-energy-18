@@ -1,44 +1,36 @@
-.page-header__logo {
-  display: block;
-  margin-top: 11px;
-  margin-bottom: 15px;
-  margin-left: 20px;
-
-  img {
-    &:active {
-      opacity: 0.6;
-    }
-  }
+.site-list {
+  @include listDischarge;
 }
 
-.site-list {
-  list-style: none;
-  margin: 0;
+.page-header__logo-wrapper {
+  border-bottom: 1px solid grey;
+}
+
+.site-list__item {
+  @include upper;
+  font-family: $main-font;
+  font-weight: $regular;
   padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-bottom: 1px solid grey;
+}
 
-  &__item {
-    @include upper;
-    @include oswaldRegular;
-    padding: 24px 123px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 20px;
-    border-bottom: 1px solid lightgrey;
+.site-list__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
-    &:first-child {
-      border-top: 1px solid lightgrey;
-    }
+  color: #111111;
 
-    &--active {
-      border-bottom: 1px solid #68b738;
-    }
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 
-    a {
-      color: #111111;
-
-      &:active {
-        color: rgba(#111111, 0.3);
-      }
-    }
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
   }
 }
