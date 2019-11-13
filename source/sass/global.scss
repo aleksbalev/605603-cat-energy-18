@@ -35,6 +35,15 @@ img {
   margin-right: auto;
 }
 
+.main-title {
+  @include paddingMargin0;
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+}
+
 .button {
   @include upper;
   font-family: $main-font;

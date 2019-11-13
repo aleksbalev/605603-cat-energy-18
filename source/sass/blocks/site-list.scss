@@ -2,10 +2,6 @@
   @include listDischarge;
 }
 
-.page-header__logo-wrapper {
-  border-bottom: 1px solid grey;
-}
-
 .site-list__item {
   @include upper;
   font-family: $main-font;

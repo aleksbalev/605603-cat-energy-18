@@ -1,3 +1,7 @@
+.features {
+  margin-bottom: 16px;
+}
+
 .features__list {
   @include listDischarge;
   max-width: 280px;
