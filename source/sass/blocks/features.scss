@@ -1,0 +1,63 @@
+.features__list {
+  @include listDischarge;
+  max-width: 280px;
+}
+
+.features__item {
+  background-color: #f2f2f2;
+  margin-top: 22px;
+  padding-left: 21px;
+  padding-right: 36px;
+  padding-top: 24px;
+}
+
+.features__title {
+  @include upper;
+  width: 137px;
+  color: #111111;
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: 24px;
+  line-height: 37px;
+  margin-left: 70px;
+
+  // &--slim::before {
+  //   content: url("../img/svg/icon-cat-slim.svg");
+  //   position: absolute;
+  //   top: -7px;
+  //   left: -60px;
+  //   display: block;
+  //   width: 35px;
+  //   height: 49px;
+  //   z-index: 100;
+  // }
+
+  // &--slim::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: -5px;
+  //   left: -65px;
+  //   display: block;
+  //   width: 50px;
+  //   height: 50px;
+  //   background-color: #68b738;
+  //   border-radius: 50%;
+  // }
+}
+
+.features__links {
+  @include upper;
+  display: block;
+  padding-top: 44px;
+  padding-bottom: 22px;
+  color: #111111;
+  font-family: $main-font;
+  font-weight: $regular;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.features__describe {
+  @include paddingMargin0;
+  width: 227px;
+}
