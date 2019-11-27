@@ -1,17 +1,14 @@
 .site-list {
-  @include listDischarge;
+  @include ulres;
 }
 
 .site-list__item {
-  @include upper;
-  font-family: $main-font;
+  border-bottom: 1px solid #ededed;
   font-weight: $regular;
-  padding: 0;
-  margin: 0;
   font-size: 20px;
   text-align: center;
   line-height: 20px;
-  border-bottom: 1px solid #ededed;
+  text-transform: uppercase;
 }
 
 .site-list__link {

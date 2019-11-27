@@ -3,7 +3,7 @@
 }
 
 .features__list {
-  @include listDischarge;
+  @include ulres;
 }
 
 .features__item {
@@ -15,14 +15,13 @@
 }
 
 .features__title {
-  @include upper;
   width: 137px;
   color: #111111;
-  font-family: $main-font;
   font-weight: $regular;
   font-size: 24px;
   line-height: 37px;
   margin-left: 70px;
+  text-transform: uppercase;
 
   // &--slim::before {
   //   content: url("../img/svg/icon-cat-slim.svg");
@@ -49,18 +48,18 @@
 }
 
 .features__links {
-  @include upper;
   display: block;
   padding-top: 44px;
   padding-bottom: 22px;
   color: #111111;
-  font-family: $main-font;
   font-weight: $regular;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
 .features__describe {
-  @include paddingMargin0;
+  font-family: $second-font;
+  font-weight: $regular;
   width: 227px;
 }

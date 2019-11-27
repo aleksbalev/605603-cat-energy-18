@@ -3,7 +3,6 @@
 }
 
 .page-footer__logo {
-  @include paddingMargin0;
   display: block;
   padding-top: 39px;
   margin-bottom: 48px;
@@ -12,6 +11,5 @@
 .page-footer__copyright {
   display: block;
   margin-top: 44px;
-  font-family: $second-font;
   color: #444444;
 }

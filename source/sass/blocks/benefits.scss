@@ -1,14 +1,16 @@
+.benefits__title {
+  margin-bottom: 20px;
+}
+
 .benefits__list {
-  @include listDischarge;
-  width: 200px;
-  margin-top: 23px;
-  margin-right: 46px;
-  margin-left: 76px;
+  @include ulres;
+  margin-left: 80px;
 }
 
 .benefits__item {
+  padding-bottom: 32px;
   font-family: $second-font;
+  font-weight: $regular;
   font-size: 14px;
   line-height: 18px;
-  padding-bottom: 32px;
 }

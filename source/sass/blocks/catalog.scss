@@ -1,23 +1,19 @@
 .catalog__list {
-  @include listDischarge;
+  @include ulres;
 }
 
 .catalog__item {
+  border-bottom: 1px solid #ededed;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
 }
 
 .catalog__title {
-  @include upper;
   width: 75px;
-  font-family: $main-font;
+
+  text-transform: uppercase;
   font-weight: $regular;
   color: #111111;
-
-  &--more {
-    width: 220px;
-  }
 }
 
 .catalog__field {
@@ -29,9 +25,9 @@
 }
 
 .catalog__value {
+  padding-left: 66px;
   font-family: $second-font;
   font-weight: $regular;
-  padding-left: 66px;
   font-size: 12px;
   line-height: 16px;
   color: #444444;

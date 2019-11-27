@@ -1,4 +1,8 @@
-@import "./global.scss";
+@import "../../node_modules/node-normalize-scss/normalize";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
 @import "blocks/site-list.scss";
 @import "blocks/program.scss";
 @import "blocks/page-header.scss";
