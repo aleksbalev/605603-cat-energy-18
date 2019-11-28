@@ -17,6 +17,7 @@
           <a class="page-header__logo">
             <img src="img/svg/logo-mobile.svg" alt="Логотип 'Cat Energy'" width="191" height="39">
           </a>
+          <button class="page-header__button" type="button">Закрыть</button>
         </div>
         <nav class="main-nav">
           <!-- <button class="main-nav__toggle" type="button">
@@ -40,7 +41,7 @@
 
   <main class="page-main">
 
-    <h1 class="page-main__title">
+    <h1 class="main-title order__main-title">
       Подбор программы
     </h1>
 
@@ -73,17 +74,17 @@
               </ul>
             </div>
 
-            <div class="order__fields">
+            <div class="order__fields order__fields--program-chose">
               <ul class="order__list">
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="losing-weight">Похудение</label>
                   <input type="radio" class="order__radio" name="program-choose" id="losing-weight" checked>
                 </li>
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="raise-weight">Набор массы</label>
                   <input type="radio" class="order__radio" name="program-choose" id="raise-weight">
                 </li>
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="dont-know">Не знаю (Нужен ваш совет)</label>
                   <input type="radio" class="order__radio" name="program-choose" id="dont-know">
                 </li>
@@ -98,12 +99,12 @@
               <ul class="order__list">
                 <li class="order__item">
                   <label for="owner-email">E-mail:*</label>
-                  <input type="email" class="order__input-contact" name="email" id="owner-email"
+                  <input type="email" class="order__input" name="email" id="owner-email"
                     placeholder="kuklachev@gmail.com">
                 </li>
                 <li class="order__item">
                   <label for="owner-tel">Телефон:*</label>
-                  <input type="tel" class="order__input-contact" name="tel" id="owner-tel"
+                  <input type="tel" class="order__input" name="tel" id="owner-tel"
                     placeholder="8 (960) 900-60-90">
                 </li>
               </ul>
@@ -113,35 +114,33 @@
               <h3 class="order__title">
                 Комментарий
               </h3>
-              <textarea class="order__textarea" name="comment" id="owner-comment"
-                placeholder="Расскажите обо всех повадках кота">
-              </textarea>
-            </div>
+              <textarea class="order__textarea" name="comment" id="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
 
             <div class="order__fields">
               <h3 class="order__title">
                 Дополнительно
               </h3>
               <ul class="order__list">
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="sweetener">Сахарозаменитель</label>
                   <input type="checkbox" class="order__checkbox" name="sweetener" id="sweetener" checked>
                 </li>
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="water">Питьевая вода</label>
                   <input type="checkbox" class="order__checkbox" name="clean-water" id="water">
                 </li>
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="milk">Молоко</label>
                   <input type="checkbox" class="order__checkbox" name="milk" id="milk">
                 </li>
-                <li class="order__item">
+                <li class="order__item order__item--radio-check">
                   <label for="vitamins">Витамины</label>
                   <input type="checkbox" class="order__checkbox" name="vitamins" id="vitamins">
                 </li>
               </ul>
             </div>
-            <button type="submit" class="button">Отправить заявку</button>
+            <button type="submit" class="button order__button">Отправить заявку</button>
             <p class="order__note">* — Обязательные поля</p>
           </form>
         </div>
@@ -163,8 +162,11 @@
               Санкт-Петербург
             </p>
           </div>
-          <img src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+          <div class="contacts__map">
+            <img src="img/map-pin-mobile@1x.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
             width="320" height="400">
+
+          </div>
         </div>
       </div>
     </section>
