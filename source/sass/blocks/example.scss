@@ -1,0 +1,44 @@
+.example {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  background-color: $bg-main-color;
+}
+
+.example__text {
+  font-family: $second-font;
+  font-weight: $regular;
+}
+
+.example__list {
+  @include ulres;
+  font-family: $second-font;
+  font-weight: $regular;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__item {
+  b {
+    font-family: $main-font;
+    font-weight: $regular;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+.example__cost {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.slider__controll {
+  @include inres;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}

@@ -13,7 +13,7 @@
 
   text-transform: uppercase;
   font-weight: $regular;
-  color: #111111;
+  color: $black;
 }
 
 .catalog__field {
@@ -21,7 +21,6 @@
   font-weight: $regular;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
 }
 
 .catalog__value {
@@ -30,7 +29,6 @@
   font-weight: $regular;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
   text-align: right;
 }
 

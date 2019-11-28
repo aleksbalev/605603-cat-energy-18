@@ -7,7 +7,7 @@
 }
 
 .features__item {
-  background-color: #f2f2f2;
+  background-color: $bg-main-color;
   margin-top: 22px;
   padding-left: 21px;
   padding-right: 36px;
@@ -16,7 +16,7 @@
 
 .features__title {
   width: 137px;
-  color: #111111;
+  color: $black;
   font-weight: $regular;
   font-size: 24px;
   line-height: 37px;
@@ -51,7 +51,7 @@
   display: block;
   padding-top: 44px;
   padding-bottom: 22px;
-  color: #111111;
+  color: $black;
   font-weight: $regular;
   font-size: 16px;
   line-height: 16px;
