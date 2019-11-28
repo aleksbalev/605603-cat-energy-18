@@ -1,0 +1,29 @@
+.site-list {
+  @include ulres;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ededed;
+  font-weight: $regular;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: $black;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+}

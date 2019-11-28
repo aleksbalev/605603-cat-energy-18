@@ -1,0 +1,22 @@
+.contacts {
+  padding-top: 30px;
+}
+
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  padding-bottom: 25px;
+  font-family: $second-font;
+  line-height: 20px;
+}
+
+.contacts__map {
+  img {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+.page-header__logo-wrapper {
+  border-bottom: 1px solid #ededed;
+}
+
+.page-header__logo {
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+
+  img {
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

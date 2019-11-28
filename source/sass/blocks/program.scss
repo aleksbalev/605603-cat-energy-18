@@ -1,0 +1,28 @@
+.program__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 320px 305px;
+}
+
+.program__title {
+  max-width: 270px;
+  font-weight: $regular;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.program__slogan {
+  font-weight: $regular;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.program__pick-up {
+  font-size: 14px;
+  line-height: 18px;
+}

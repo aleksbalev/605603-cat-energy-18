@@ -1,0 +1,55 @@
+.extra__title {
+  padding: 30px 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.extra__list {
+  @include ulres;
+}
+
+.extra__item {
+  border-top: 1px solid #ededed;
+  padding-bottom: 15px;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.extra__item-name {
+  padding: 15px 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: $regular;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra__table {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 14px;
+  line-height: 14px;
+}
+
+.extra__feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extra__text {
+  width: 160px;
+  text-align: center;
+  font-family: $second-font;
+  font-weight: $regular;
+  color: $white;
+}
