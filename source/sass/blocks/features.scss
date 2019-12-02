@@ -15,44 +15,22 @@
 }
 
 .features__title {
-  width: 137px;
-  color: $black;
-  font-weight: $regular;
+  margin-left: 70px;
+
+  color: #111111;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  margin-left: 70px;
   text-transform: uppercase;
-
-  // &--slim::before {
-  //   content: url("../img/svg/icon-cat-slim.svg");
-  //   position: absolute;
-  //   top: -7px;
-  //   left: -60px;
-  //   display: block;
-  //   width: 35px;
-  //   height: 49px;
-  //   z-index: 100;
-  // }
-
-  // &--slim::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: -5px;
-  //   left: -65px;
-  //   display: block;
-  //   width: 50px;
-  //   height: 50px;
-  //   background-color: #68b738;
-  //   border-radius: 50%;
-  // }
 }
 
 .features__links {
   display: block;
   padding-top: 44px;
   padding-bottom: 22px;
-  color: $black;
-  font-weight: $regular;
+
+  color: #111111;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -60,6 +38,5 @@
 
 .features__describe {
   font-family: $second-font;
-  font-weight: $regular;
-  width: 227px;
+  font-weight: 400;
 }

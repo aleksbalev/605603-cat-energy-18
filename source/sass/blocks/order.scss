@@ -1,7 +1,5 @@
 .order__button {
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .order__main-title {
@@ -12,7 +10,7 @@
   margin: 30px 0;
   font-size: 24px;
   line-height: 24px;
-  color: $black;
+  color: #111111;
 }
 
 .order__form {
@@ -28,7 +26,7 @@
 }
 
 .order__text {
-  color: $black;
+  color: #111111;
   text-transform: uppercase;
 }
 
@@ -69,8 +67,7 @@
 .order__textarea {
   width: 100%;
   height: 150px;
-  padding-top: 15px;
-  padding-left: 16px;
+  padding: 15px 16px;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &::placeholder {

@@ -6,13 +6,14 @@
 
 .example__text {
   font-family: $second-font;
-  font-weight: $regular;
+  font-weight: 400;
 }
 
 .example__list {
   @include ulres;
+
   font-family: $second-font;
-  font-weight: $regular;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
 }
@@ -20,11 +21,11 @@
 .example__item {
   b {
     font-family: $main-font;
-    font-weight: $regular;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
-    color: $black;
+    color: #111111;
   }
 }
 
@@ -32,13 +33,13 @@
   text-align: center;
   font-size: 14px;
   line-height: 20px;
-  color: $black;
+  color: #111111;
 }
 
 .slider__controll {
   @include inres;
   font-size: 16px;
   line-height: 20px;
-  color: $black;
+  color: #111111;
   text-transform: uppercase;
 }
