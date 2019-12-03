@@ -1,12 +1,10 @@
 .page-header__logo-wrapper {
   border-bottom: 1px solid #ededed;
+  padding: 11px 20px 15px;
 }
 
 .page-header__logo {
   display: block;
-  margin-top: 11px;
-  margin-bottom: 15px;
-  margin-left: 20px;
 
   img {
     &:active {

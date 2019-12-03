@@ -1,8 +1,9 @@
 .extra__title {
   padding: 30px 0;
+
   font-size: 24px;
   line-height: 24px;
-  color: $black;
+  color: #111111;
 }
 
 .extra__list {
@@ -21,9 +22,10 @@
 .extra__item-name {
   padding: 15px 0;
   margin: 0;
+
   font-size: 16px;
   line-height: 16px;
-  font-weight: $regular;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
 }
@@ -32,6 +34,7 @@
   padding: 0;
   margin: 0;
   padding-bottom: 14px;
+
   line-height: 14px;
 }
 
@@ -47,9 +50,23 @@
 }
 
 .extra__text {
-  width: 160px;
   text-align: center;
+
   font-family: $second-font;
-  font-weight: $regular;
-  color: $white;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.extra__value {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.extra__field {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
