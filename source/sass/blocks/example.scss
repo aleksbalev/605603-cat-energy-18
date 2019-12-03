@@ -19,7 +19,7 @@
 }
 
 .example__item {
-  b {
+  &--bold {
     font-family: $main-font;
     font-weight: 400;
     font-size: 24px;
