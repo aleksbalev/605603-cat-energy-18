@@ -1,11 +1,35 @@
+.program {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 305px;
+    z-index: -1;
+  }
+}
+
 .program__wrapper {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 320px 305px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
 }
 
 .program__title {
+  margin: 0;
+  margin-bottom: 19px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -13,6 +37,8 @@
 }
 
 .program__slogan {
+  margin-bottom: 29px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -22,4 +48,8 @@
 .program__pick-up {
   font-size: 14px;
   line-height: 18px;
+}
+
+.program__image {
+  align-self: center;
 }
