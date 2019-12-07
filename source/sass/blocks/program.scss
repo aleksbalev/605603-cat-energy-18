@@ -15,6 +15,12 @@
     height: 305px;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .program__wrapper {
@@ -24,6 +30,12 @@
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .program__title {
@@ -34,6 +46,17 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 33px;
+    padding-left: 86px;
+    padding-right: 208px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+  }
 }
 
 .program__slogan {
@@ -43,6 +66,16 @@
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+  }
 }
 
 .program__pick-up {
@@ -52,4 +85,25 @@
 
 .program__image {
   align-self: center;
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+.program__button {
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 218px;
+    left: 88px;
+    padding: 15px 27px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
