@@ -1,18 +1,41 @@
 .benefits {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .benefits__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .benefits__title {
+  padding: 0;
+  margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .benefits__list {
   @include ulres;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .benefits__item {
@@ -61,6 +84,40 @@
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    min-height: 235px;
+    margin: 0;
+    padding: 0;
+    padding-top: 118px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 136px;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 90px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 90px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
     }
   }
 }

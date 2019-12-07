@@ -1,9 +1,10 @@
 .features {
   margin-top: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 50px;
   }
 }
 
