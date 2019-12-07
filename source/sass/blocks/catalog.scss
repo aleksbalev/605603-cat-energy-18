@@ -1,11 +1,29 @@
 .catalog__list {
   @include ulres;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog__item {
   border-bottom: 1px solid #ededed;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    min-height: 431px;
+    border: none;
+
+    background-color: #f2f2f2;
+
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
 }
 
 .catalog__link {

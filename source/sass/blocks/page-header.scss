@@ -1,10 +1,15 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .page-header__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-    margin-bottom: 60px;
   }
 }
 
