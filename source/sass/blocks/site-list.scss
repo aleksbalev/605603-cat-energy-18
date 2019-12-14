@@ -26,6 +26,10 @@
       margin-right: 37px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .site-list__link {
@@ -36,12 +40,7 @@
   color: #111111;
 
   &:active {
-    color: rgba(17, 17, 17, 0.3);
-  }
-
-  &:hover,
-  &:focus {
-    color: rgba(17, 17, 17, 0.6);
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -51,5 +50,22 @@
     &--active {
       border-bottom: 2px solid #68b738;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--white {
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--active.site-list__link--white {
+    border-color: #ffffff;
   }
 }

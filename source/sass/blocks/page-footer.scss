@@ -1,23 +1,22 @@
-.page-footer > .container {
-  width: 100%;
+.page-footer {
+  background-color: #f2f2f2;
 }
 
 .page-footer__wrapper {
   padding: 37px 20px;
-  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 63px 30px;
+    padding: 63px 0;
   }
 }
 
 .page-footer__logo {
+  width: 128px;
+  margin: 0 auto 28px;
   display: block;
-  text-align: center;
-  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -31,7 +30,7 @@
 
   font-family: $second-font;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   fill: #666666;
   color: #444444;
 }
@@ -97,7 +96,7 @@
     }
 
     &--copyright {
-      margin-left: 23px;
+      margin-left: 14px;
     }
   }
 }

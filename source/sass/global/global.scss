@@ -28,15 +28,12 @@ img {
 
 .main-title {
   margin: 0;
-  padding: 0 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-
     font-size: 60px;
   }
 }
