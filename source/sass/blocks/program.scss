@@ -24,10 +24,9 @@
       top: 0;
       left: auto;
       right: 0;
-      background-color: transparent;
+      background-color: #65a93c;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: 100% 0;
-      background-size: 50% auto;
+      width: 50%;
       height: 696px;
     }
   }
@@ -36,41 +35,33 @@
     position: initial;
     margin-bottom: 130px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 266px;
+  }
 }
 
 .program__wrapper {
+  display: flex;
+  flex-direction: column;
   padding-top: 30px;
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     padding: 0;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
-.program__text-wrapper {
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-left: 86px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 41%;
+    width: 585px;
+    position: relative;
   }
 }
 
 .program__title {
-  margin: 0;
-  margin-bottom: 19px;
+  margin: 0 0 19px;
 
   font-weight: 400;
   font-size: 36px;
@@ -78,16 +69,16 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 33px;
-    padding-right: 208px;
+    margin: 0 0 33px;
+    padding-right: 150px;
+    padding-left: 90px;
 
     font-size: 60px;
     color: #111111;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-right: 0;
   }
 }
 
@@ -101,11 +92,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 48px;
+    padding-left: 93px;
 
     font-size: 20px;
     line-height: 20px;
     color: #111111;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -122,24 +118,28 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    margin-top: -82px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-left: -13px;
-    margin-top: -87px;
+    margin-left: 150px;
+    margin-top: -345px;
   }
 }
 
 .program__button {
   font-size: 14px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 218px;
-    left: 88px;
+    width: 245px;
     padding: 15px 27px;
+    margin-left: 90px;
+    order: 0;
+    z-index: 1;
 
     font-size: 20px;
     line-height: 20px;
