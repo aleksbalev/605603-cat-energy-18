@@ -27,16 +27,21 @@ img {
 }
 
 .main-title {
+  margin: 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .button {
   @include inres;
   display: block;
-  padding: 12px 0;
+  padding: 12px 12px;
   text-align: center;
 
   font-size: 16px;

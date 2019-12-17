@@ -1,47 +1,120 @@
 .features {
   margin-top: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.features__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .features__list {
   @include ulres;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
   background-color: $bg-main-color;
-  padding: 23px;
+  padding: 34px 23px 23px;
 
-  &:first-child {
+  @media (min-width: $tablet-width) {
+    padding: 81px 320px 63px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-right: 56px;
+    margin-bottom: 80px;
+  }
+
+  &:not(:last-child) {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 80px;
+    }
   }
 }
 
 .features__title {
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 36px;
+  margin-bottom: 36px;
+  padding-left: 70px;
 
   color: #111111;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 26px;
+
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 164px;
+    margin-bottom: 75px;
+  }
 }
 
 .features__links {
-  display: block;
+  padding-right: 37px;
 
   color: #111111;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .features__describe {
   margin: 0;
-  margin-bottom: 44px;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   font-family: $second-font;
   font-weight: 400;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 60px;
+    border: none;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }

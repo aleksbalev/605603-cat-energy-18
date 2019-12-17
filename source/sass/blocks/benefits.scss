@@ -1,17 +1,125 @@
+.benefits {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.benefits__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .benefits__title {
+  margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .benefits__list {
   @include ulres;
-  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .benefits__item {
-  padding-bottom: 32px;
+  position: relative;
+  min-height: 60px;
+  padding-left: 80px;
 
   font-family: $second-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    padding: 118px 80px 0 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 140px;
+
+      @media (min-width: $desktop-width) {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 233px;
+    padding-right: 0;
+
+    &:not(:nth-child(-n+4)) {
+      margin-top: 55px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--dining {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
 }
