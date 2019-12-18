@@ -1,0 +1,32 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__line {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  padding: 4px 6px;
+  margin: 0 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.slider__button {
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+.slider__controll {
+  @include inres;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}

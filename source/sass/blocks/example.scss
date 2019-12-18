@@ -1,16 +1,30 @@
 .example {
-  padding-top: 15px;
-  padding-bottom: 40px;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 34px;
   background-color: $bg-main-color;
 }
 
+.example__title {
+  padding: 0 20px;
+  margin-bottom: 14px;
+}
+
 .example__text {
+  margin: 0 0 27px;
+  padding: 0 34px 0 20px;
+
   font-family: $second-font;
   font-weight: 400;
 }
 
 .example__list {
   @include ulres;
+  max-width: 460px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto 38px;
 
   font-family: $second-font;
   font-weight: 400;
@@ -19,7 +33,18 @@
 }
 
 .example__item {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
   &--bold {
+    padding: 17px 0;
+    border: none;
+
     font-family: $main-font;
     font-weight: 400;
     font-size: 24px;
@@ -27,19 +52,28 @@
     text-transform: uppercase;
     color: #111111;
   }
+
+  &--describe {
+    width: 82px;
+    height: 21px;
+    margin: -8px auto 0;
+    border: none;
+    background-color: #f2f2f2;
+  }
 }
 
 .example__cost {
+  margin: 0 0 44px;
   text-align: center;
+
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   color: #111111;
 }
 
-.slider__controll {
-  @include inres;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
+.example__image {
+  width: 311px;
+  height: 232px;
+  margin: 0 auto 35px;
 }
